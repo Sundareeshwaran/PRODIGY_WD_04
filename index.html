@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body class="bg-sky-200 h-[100vh]">
+    <!-- Responsive Navbar using Tailwind CSS -->
+    <div class="navbar p-4 flex items-center justify-between">
+      <div class="logo"><i class="ri-bug-fill"></i>S</div>
+      <div class="nav-list list-none hidden md:flex gap-12 text-xl">
+        <li><a href="">Home</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#about">About</a></li>
+      </div>
+      <div class="goto md:flex gap-2 hidden">
+        <i class="ri-flight-takeoff-fill"></i>Let's Takeoff
+      </div>
+
+      <!-- Mobile NavBar -->
+      <div
+        class="mobileView hidden md:hidden z-10 bg-sky-200 w-full px-[15%] py-[7%] absolute top-[14%] left-[50%] -translate-x-[50%] transition-all duration-150 ease-in-out"
+      >
+        <div
+          class="nav-list list-none text-xl text-center flex flex-col gap-10 mb-10"
+        >
+          <li><a href="">Home</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#about">About</a></li>
+        </div>
+        <div class="goto text-center">
+          <i class="ri-flight-takeoff-fill"></i>Let's Takeoff
+        </div>
+      </div>
+      <div class="menu block md:hidden">
+        <i class="ri-menu-line" id="menuBtn"></i>
+      </div>
+    </div>
+
+    <!-- Hero section -->
+    <div
+      class="main p-10 flex justify-between md:items-center flex-col md:flex-row"
+    >
+      <div class="left-side">
+        <h1
+          class="lg:text-7xl md:text-5xl sm:text-4xl text-3xl font-bold md:tracking-[0.2rem] text-sky-600"
+        >
+          Hello I'm<br />
+          <span class="text-effect">Sundareeshwaran D</span>
+        </h1>
+        <p
+          class="ld:text-4xl md:text-3xl sm:text-2xl text-lg font-bold md:mt-4 mt-2 text-sky-600"
+        >
+          I'm a <span class="auto-type text-effect"></span>
+        </p>
+      </div>
+      <div class="right-side">
+        <div class="profile">
+          <img src="Image.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Mission -->
+    <div class="mission my-10 p-10" id="mission">
+      <h1 class="text-6xl font-bold text-center text-sky-600 mb-20">Mission</h1>
+      <div class="tasks my-5 flex md:flex-row flex-col gap-10">
+        <div class="img"><img src="img1.png" alt="" />Responsive Site</div>
+        <div class="img"><img src="img2.png" alt="" />Stopwatch</div>
+        <div class="img"><img src="img3.png" alt="" />Tic Tac Toe</div>
+      </div>
+    </div>
+
+    <!-- Service -->
+    <div class="service my-10 mx-auto p-10" id="service">
+      <h1 class="text-6xl font-bold text-center text-sky-600 mb-20">Service</h1>
+      <div class="text-content">
+        <p class="text-2xl font-medium text-sky-600">
+          Here is my service about my Web Development idea's...
+        </p>
+        <p
+          class="text-xl text-slate-200 font-medium text-balance mt-4 md:mx-10"
+        >
+          I'm developing Responsive, Attractive, Interactive web applications to
+          all platform like Mobile, Tablet, Laptop, Desktop, etc. I'm using
+          HTML, CSS, JavaScript, React, Node.js, MySQL, PHP, etc. I'm also
+          developing Web Applications using MERN Stack.
+        </p>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="about my-10 mx-auto p-10" id="about">
+      <h1 class="text-6xl font-bold text-center text-sky-600 mb-20">About</h1>
+      <div
+        class="about-content bg-sky-300 my-[8%] mx-auto md:w-[800px] w-[400px] p-4 rounded-2xl flex justify-between items-center md:flex-row flex-col"
+      >
+        <div
+          class="md:text-2xl md:mb-0 mb-5 text-sm font-semibold text-sky-600"
+        >
+          <p class="text-balance">
+            Hi, I'm
+            <span class="text-effect text-xl md:text-3xl"
+              >Sundareeshwaran.</span
+            >
+            <br />
+            I'm interested in pursuing a career in
+            <span class="text-effect text-xl md:text-3xl"
+              >web technologies</span
+            >
+            and
+            <span class="text-effect text-xl md:text-3xl"
+              >web development.</span
+            >
+            <br />
+            I'm currently studying
+            <span class="text-effect text-xl md:text-3xl">web development</span>
+            and other related technologies. <br />
+            I'm studying in
+            <span class="text-effect text-xl md:text-3xl"
+              >Karpagam Academy of Higher Education</span
+            >
+            in <span class="text-effect text-xl md:text-3xl">Coimbatore</span>
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-2 text-center md:text-2xl text-xl font-semibold text-sky-600"
+        >
+          Contact
+          <ul class="flex gap-8 md:text-2xl text-xl font-medium">
+            <li>
+              <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-github-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-x-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
